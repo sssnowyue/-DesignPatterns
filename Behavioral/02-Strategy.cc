@@ -1,4 +1,12 @@
 /**
+Startegy pattern:
+  Replaces `if else` and `switch case`
+  - Strategy [Stable]: Defines a common interface for all supported algorithms
+  - Concrete Strategy[Unstable]: Implements the strategy interface and provides specific algorithm implementation
+  - Context [Stable]: Contains a strategy instance and calls methods of the strategy object when needed
+*/
+
+/**
 A supermarket has launched different shopping discount strategies, and you can
 choose different discount methods according to your needs. Among them, there are
 two main preferential strategies:

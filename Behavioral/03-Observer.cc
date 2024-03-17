@@ -1,9 +1,10 @@
 /**
-Used for one-to-many dependencies: when the status of a subject changes, all Observers will be notified and automatically updated.
-- Subject [Stable]: 1. Register, 2. Delete, 3. Notify Observer
-- Observer [Stable]: Do corresponding operations after receiving notifications from Subject
-- Concrete Subject [Unstable]: Specific implementations of Subject
-- Concrete Observer [Unstable]: Specific implementations of Observer
+Observer Pattern:
+  Used for one-to-many dependencies: when the status of a subject changes, all Observers will be notified and automatically updated.
+  - Subject [Stable]: 1. Register, 2. Delete, 3. Notify Observer
+  - Observer [Stable]: Do corresponding operations after receiving notifications from Subject
+  - Concrete Subject [Unstable]: Specific implementations of Subject
+  - Concrete Observer [Unstable]: Specific implementations of Observer
 */
 /**
 The school has a clock (subject), which will notify all students (observers) of
