@@ -26,6 +26,11 @@ using namespace std;
 // Abstract class
 class Coffee {
 public:
+  // Constructor
+  Coffee() {}
+  // Destructor
+  virtual ~Coffee() {}
+  
   // Template method : Defining the coffee making process
   void makeCoffee() {
     grindCoffeeBeans();
