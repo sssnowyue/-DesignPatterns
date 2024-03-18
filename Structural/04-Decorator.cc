@@ -1,5 +1,6 @@
 /**
 Decorator Pattern:
+Focus on dynamically adding functionality to objects at runtime.
 - Component: 
     - An interface.
 - Concrete Component: 
