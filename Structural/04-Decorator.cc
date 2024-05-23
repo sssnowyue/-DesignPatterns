@@ -41,6 +41,7 @@ Adding Sugar
 #include <iostream>
 #include <memory>
 #include <string>
+#include <utility>
 
 using namespace std;
 
@@ -110,6 +111,10 @@ int main() {
       coffee = make_unique<SugarDecorator>(move(coffee));
 
     // Output the coffee making process
+    cout << coffee->makingCoffee() << endl;
+
+    // Add more Decorations
+    coffee = make_unique<SugarDecorator>(move(coffee));
     cout << coffee->makingCoffee() << endl;
   }
 
